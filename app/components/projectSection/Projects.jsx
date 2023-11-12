@@ -35,7 +35,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <Container id="projects" sx={{ height: "100vh" }}>
+    <Container id="projects" sx={{ height: "100vh", paddingBottom: "15px" }}>
       <Typography
         sx={{
           textAlign: "center",
