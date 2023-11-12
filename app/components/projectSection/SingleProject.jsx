@@ -15,6 +15,7 @@ import {
   BreakPointTheme,
   NavbarBtn,
   StyledCard,
+  StyledCardActions,
   StyledCardContent,
   StyledCardMedia,
 } from "@/app/styles/Styles";
@@ -54,7 +55,7 @@ export default function SingleProject({ project }) {
             {project.description}
           </Typography>
         </StyledCardContent>
-        <CardActions>
+        <StyledCardActions>
           <Box
             display="flex"
             justifyContent="center"
@@ -82,7 +83,7 @@ export default function SingleProject({ project }) {
               </NavbarBtn>
             )}
           </Box>
-        </CardActions>
+        </StyledCardActions>
       </StyledCard>
     </Grid>
   );
