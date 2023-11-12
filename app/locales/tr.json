@@ -1,0 +1,27 @@
+{
+    "home": "Ana Sayfa",
+    "about": "Hakkında",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "resume": "CV'yi indir",
+    "hireMe": "Beni işe al",
+    "heroTitle": "Merhaba, ben ",
+    "heroTitleName":"Gafur",
+    "heroTitleWD": "Web Geliştiricisi",
+    "heroTitleMD": "Mobil Geliştirici",
+    "heroDescription": "Ben, kullanıcı dostu web siteleri, web uygulamaları ve mobil uygulamalar oluşturma tutkusuyla dolu bir web ve mobil geliştiriciyim. Olağanüstü web siteleri, uygulamalar ve aralarındaki her şeyin (ve ara sıra tasarım) yapımında uzmanlaşıyorum.",
+    "aboutTitle": "Benim Hakkımda",
+    "aboutDescription": "Bir geliştirici olarak, her zaman karmaşık sorunlara zarif ve etkili çözümler oluşturma konusunda tutkulu oldum. Uygulamaların hem ön yüzü hem de arka yüzünde çalışmayı seviyorum ve performansı optimize etme, kullanıcı deneyimini geliştirme ve kod kalitesinin en yüksek seviyede olmasını sağlama yollarını arıyorum. Kariyerim boyunca, basit statik web sitelerinden karmaşık kurumsal düzeydeki uygulamalara kadar geniş bir projeler yelpazesi üzerinde çalıştım. React, NextJS ve Node.js gibi çeşitli geliştirme araçları ve çerçeveleriyle çalışma deneyimim bulunmaktadır. Her zaman öğrenmeye ve yeni teknolojileri keşfetmeye hevesliyim ve becerilerimi ve bilgilerimi geliştirmek için fırsatlar arıyorum.",
+    "skills": "Yetenekler",
+    "education": "Eğitim",
+    "certifications": "Sertifikalar",
+    "myProjects": "Projeler",
+    "leaveMessage": "Mesaj Bırakın",
+    "formNameLabel": "Ad",
+    "formEmailLabel": "E-posta",
+    "formMessageLabel": "Mesaj",
+    "sendMessage": "Mesaj Gönder",
+    "messageSucess": "Mesaj başarıyla gönderildi!",
+    "messageError": "Mesaj gönderilemedi."
+  }
+  

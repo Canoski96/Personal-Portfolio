@@ -1,0 +1,27 @@
+{
+    "home": "Kreu",
+    "about": "Rreth",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "resume": "Shkarkoni CV",
+    "hireMe": "Мë Punëso",
+    "heroTitle": "Përshëndetje, unë jam ",
+    "heroTitleName":"Gafur",
+    "heroTitleWD": "Zhvilluesi i Uebit",
+    "heroTitleMD": "Zhvilluesi celular",
+    "heroDescription": "Unë jam një zhvillues web dhe mobil i pasionuar me dëshirë për krijimin e faqeve të internetit dhe aplikacioneve të përdorshme për përdoruesit. Specializohem në ndërtimin (dhe rrallëherë në dizajnim) të faqeve të internetit të jashtëzakonshme, aplikacioneve dhe gjithçkaje në mes.",
+    "aboutTitle": "Rreth Meje",
+    "aboutDescription": "Si një zhvillues, gjithmonë kam qenë i pasionuar për kriimin e zgjidhjeve elegante dhe efektive për probleme komplekse. Më pëlqen të punoj në të dy anët, atë të faqes dhe të serverit të aplikacionit, dhe gjithmonë kam sytë hapur për mënyra për të optimizuar performancën, përmirësuar përvojën e përdoruesit dhe siguruar nivelin më të lartë të cilësisë së kodit. Gjatë karrierës sime, kam punuar në një spektër të gjerë të projekteve, nga faqet statike të thjeshta deri te aplikacionet komplekse në nivel enterprise. Jam i përvojësuar në punën me një shumëllojshmëri të mjeteve dhe strukturave të zhvillimit, përfshirë React, NextJS dhe Node.js. Jam gjithmonë i gatshëm për të mësuar dhe eksploruar teknologji të reja dhe kam një dëshirë të përhershme për të gjetur mundësi për të përmirësuar aftësitë dhe njohuritë e mia.",
+    "skills": "Aftësitë",
+    "education": "Arsimi",
+    "certifications": "Certifikatat",
+    "myProjects": "Projektet",
+    "leaveMessage": "Lërëni Një Mesazh",
+    "formNameLabel": "Emri",
+    "formEmailLabel": "Email",
+    "formMessageLabel": "Mesazhi",
+    "sendMessage": "Dërgoni Mesazh",
+    "messageSucess": "Mesazhi u dërgua me sukses!",
+    "messageError": "Dërgimi i mesazhit dështoi."
+  }
+  
