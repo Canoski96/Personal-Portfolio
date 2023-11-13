@@ -9,6 +9,7 @@ const Projects = () => {
   const { t } = useTranslation();
 
   const theme = BreakPointTheme;
+  const isMobileSM = useMediaQuery(theme.breakpoints.down("mobileMD"));
   const isMobile = useMediaQuery(theme.breakpoints.down("tabletSM"));
   const isTablet = useMediaQuery(theme.breakpoints.down("desktopSM"));
 
@@ -35,12 +36,21 @@ const Projects = () => {
   }, []);
 
   return (
-    <Container id="projects" sx={{ height: "100vh", paddingBottom: "15px" }}>
+    <Container
+      id="projects"
+      sx={{ height: "100vh", paddingTop: "30px", paddingBottom: "25px" }}
+    >
       <Typography
         sx={{
           textAlign: "center",
           fontWeight: "600",
-          fontSize: isMobile ? "30px" : isTablet ? "40px" : "50px",
+          fontSize: isMobileSM
+            ? "20px"
+            : isMobile
+            ? "25px"
+            : isTablet
+            ? "25px"
+            : "50px",
           paddingBottom: "50px",
         }}
       >

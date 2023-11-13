@@ -66,7 +66,6 @@ export const StyledCard = styled(Card)({
   borderRadius: 12,
   boxShadow: "0 6px 18px 0 rgba(0,0,0,0.2)",
   transition: "0.3s",
-  height: "380px",
   position: "relative",
 });
 

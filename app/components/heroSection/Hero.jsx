@@ -21,6 +21,7 @@ function Hero() {
   const containerClassName = mode === "light" ? "heroBGLight" : "heroBGDark";
 
   const theme = BreakPointTheme;
+  const isMobileSM = useMediaQuery(theme.breakpoints.down("mobileMD"));
   const isMobile = useMediaQuery(theme.breakpoints.down("tabletSM"));
   const isTablet = useMediaQuery(theme.breakpoints.down("desktopSM"));
 
@@ -43,7 +44,13 @@ function Hero() {
           <Grid item xs={12} sm={6} textAlign="center">
             <Typography
               sx={{
-                fontSize: isMobile ? "30px" : isTablet ? "40px" : "50px",
+                fontSize: isMobileSM
+                  ? "20px"
+                  : isMobile
+                  ? "25px"
+                  : isTablet
+                  ? "25px"
+                  : "50px",
                 fontWeight: "600",
                 paddingTop: "20px",
               }}
@@ -66,15 +73,22 @@ function Hero() {
             </Typography>
             <Typography
               sx={{
-                fontSize: isMobile ? "15px" : isTablet ? "20px" : "25px",
-                paddingBottom: isMobile ? "10px" : "0px",
+                fontSize: isMobileSM
+                  ? "12px"
+                  : isMobile
+                  ? "15px"
+                  : isTablet
+                  ? "15px"
+                  : "25px",
+                paddingBottom: isTablet ? "10px" : "5px",
               }}
             >
               {t("heroDescription")}
             </Typography>
-            <br />
+
             <NavbarBtn
               href="#contact"
+              size={isTablet ? "small" : "large"}
               sx={{
                 marginRight: "1rem",
                 fontWeight: "bold",
@@ -88,6 +102,7 @@ function Hero() {
               href="Resume.pdf"
               variant="contained"
               target="_blank"
+              size={isTablet ? "small" : "large"}
               sx={{
                 bgcolor: "var(--btn-primary-light)",
                 color: "var(--txt-primary-dark)",
@@ -105,7 +120,7 @@ function Hero() {
               src={heroImg}
               className="heroImageClass"
               alt="Gafur Canoski"
-              width={isMobile ? 250 : isTablet ? 250 : 300}
+              width={isMobileSM ? 200 : isMobile ? 225 : isTablet ? 250 : 350}
             />
           </Grid>
         </Grid>

@@ -22,19 +22,30 @@ import {
 
 export default function SingleProject({ project }) {
   const theme = BreakPointTheme;
+  const isMobileSM = useMediaQuery(theme.breakpoints.down("mobileMD"));
   const isMobile = useMediaQuery(theme.breakpoints.down("tabletSM"));
   const isTablet = useMediaQuery(theme.breakpoints.down("desktopSM"));
 
   return (
     <Grid item xs={12} sm={6} md={4}>
-      <StyledCard>
+      <StyledCard
+        sx={{
+          height: isMobileSM
+            ? "280px"
+            : isMobile
+            ? "300px"
+            : isTablet
+            ? "350px"
+            : "380px",
+        }}
+      >
         <CardMedia
           component="img"
           height="auto"
           image={project.imageUrl}
           alt={project.name}
         />
-        <StyledCardContent>
+        <StyledCardContent sx={{ gap: "2" }}>
           <Typography
             variant="h5"
             component="div"

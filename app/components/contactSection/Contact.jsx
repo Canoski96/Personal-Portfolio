@@ -24,6 +24,7 @@ function Contact() {
   const containerClassName = mode === "light" ? "heroBGLight" : "heroBGDark";
 
   const theme = BreakPointTheme;
+  const isMobileSM = useMediaQuery(theme.breakpoints.down("mobileMD"));
   const isMobile = useMediaQuery(theme.breakpoints.down("tabletSM"));
   const isTablet = useMediaQuery(theme.breakpoints.down("desktopSM"));
 
@@ -69,7 +70,13 @@ function Contact() {
         <Container
           sx={{
             height: "100vh",
-            paddingTop: "30px",
+            paddingTop: isMobileSM
+              ? "12rem"
+              : isMobile
+              ? "10rem"
+              : isTablet
+              ? "3rem"
+              : "1rem",
           }}
         >
           <Stack
@@ -82,7 +89,13 @@ function Contact() {
               align="center"
               sx={{
                 fontWeight: "600",
-                fontSize: isMobile ? "30px" : isTablet ? "40px" : "50px",
+                fontSize: isMobileSM
+                  ? "20px"
+                  : isMobile
+                  ? "25px"
+                  : isTablet
+                  ? "25px"
+                  : "50px",
               }}
             >
               {t("leaveMessage")}
@@ -96,6 +109,7 @@ function Contact() {
                 helperText={errors.name?.message}
                 margin="normal"
                 required
+                size={isMobile ? "small" : "medium"}
               />
               <TextField
                 fullWidth
@@ -111,6 +125,7 @@ function Contact() {
                 helperText={errors.email?.message}
                 margin="normal"
                 required
+                size={isMobile ? "small" : "medium"}
               />
               <TextField
                 fullWidth
@@ -122,6 +137,7 @@ function Contact() {
                 multiline
                 rows={4}
                 required
+                size={isMobile ? "small" : "medium"}
               />
               <Stack direction="column" alignItems="center">
                 <Button
@@ -135,6 +151,7 @@ function Contact() {
                       color: "var(--txt-primary-light)",
                     },
                   }}
+                  size={isTablet ? "medium" : "large"}
                 >
                   {t("sendMessage")}
                 </Button>
