@@ -58,3 +58,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.MuiInputBase-root {
+  color: var(--text-primary);
+}
+
+.MuiFormLabel-root {
+  color: var(--text-primary);
+}
+
+.MuiInputLabel-shrink.MuiInputLabel-root {
+  color: var(--text-primary);
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #838cb8;
+}

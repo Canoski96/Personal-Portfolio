@@ -92,8 +92,10 @@ function Hero() {
               sx={{
                 marginRight: "1rem",
                 fontWeight: "bold",
-                border: "2px solid ",
-                borderColor: "#383d5d",
+                // border: "2px solid ",
+                // borderColor: "#383d5d",
+                height: "31px",
+                padding: "4px 10px",
               }}
             >
               {t("hireMe")}
@@ -106,6 +108,7 @@ function Hero() {
               sx={{
                 bgcolor: "var(--btn-primary-light)",
                 color: "var(--txt-primary-dark)",
+                height: "31px",
                 "&:hover": {
                   bgcolor: "var(--btn-primary-dark)",
                   color: "var(--txt-primary-light)",
